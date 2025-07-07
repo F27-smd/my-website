@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Give water. Give Life | charity: water</title>
+  <style>
+    /* === Brand palette & quick reset === */
+    :root {
+      --brand-background: #77A8BB; /* soft blue taken from your design */
+      --brand-accent: #ffc907;     /* warm yellow button */
+      --brand-text: #000000;       /* primary heading color */
+      --brand-subtext: #333333;    /* paragraph color */
+      --brand-white: #fff7e1;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: var(--brand-text);
+      background-color: var(--brand-background);
+    }
+
+    /* === HERO SECTION === */
+    .hero {
+      padding: 2rem 1rem 3rem;
+      max-width: 1200px;
+      margin-inline: auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap; /* stacks gracefully on small screens */
+    }
+
+    /* --- left column (copy) --- */
+    .hero-content {
+      max-width: 600px;
+      flex: 1 1 320px;
+    }
+
+    .logo-bar {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .logo-bar img {
+      height: 24px;
+      object-fit: contain;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin: 0 0 0.5rem;
+      line-height: 1.1;
+    }
+
+    .tagline {
+      font-weight: 600;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 1.125rem;
+      line-height: 1.5;
+      margin-bottom: 2.5rem;
+      color: var(--brand-subtext);
+    }
+
+    .cta-btn {
+      background-color: var(--brand-accent);
+      border: none;
+      color: var(--brand-text);
+      padding: 1rem 2.5rem;
+      font-size: 1.125rem;
+      font-weight: 700;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: opacity 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .cta-btn:hover,
+    .cta-btn:focus {
+      opacity: 0.85;
+    }
+
+    /* --- right column (image) --- */
+    .hero-image-wrapper {
+      background: var(--brand-white);
+      padding: 1rem;
+      flex: 1 1 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-image-wrapper img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* === Responsiveness === */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.25rem;
+      }
+
+      .hero {
+        padding: 1.5rem 1rem 2rem;
+      }
+
+      .hero-content,
+      .hero-image-wrapper {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <!-- COPY COLUMN -->
+    <div class="hero-content">
+      <div class="logo-bar">
+        <img src="logo-charitywater.svg" alt="charity: water logo" />
+        <span>&times;</span>
+        <img src="logo-partner.svg" alt="Partner logo" />
+      </div>
+
+      <h1>Give water. Give Life</h1>
+
+      <div class="tagline">
+        Your donation transforms lives by providing access to clean water, a
+        human right, not a privilege.
+      </div>
+
+      <p>
+        Your donation isn’t just a feel good moment, it’s life&nbsp;changing for
+        others, providing access to the most basic human necessity: clean water.
+      </p>
+
+      <a href="#donate" class="cta-btn">Donate Now</a>
+    </div>
+
+    <!-- IMAGE COLUMN -->
+    <div class="hero-image-wrapper">
+      <img
+        src="placeholder-water-well.jpg"
+        alt="Smiling girl at a clean water pump"
+      />
+    </div>
+  </section>
+</body>
+</html>
